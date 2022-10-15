@@ -1,8 +1,8 @@
 <script>
   const commandments = [
-    'Älä kritisoi MaGoa, sinun herraasi',
-    'Älä valita huonoa tuuriasi, MaGo, sinun herrasi, on määrännyt mitä nostat',
-    'Älä valita Teron hyvästä tuurista, MaGo, sinun herrasi, on määrännyt mitä Tero nostaa',
+    'Älä kritisoi Maroa, sinun herraasi',
+    'Älä valita huonoa tuuriasi, Maro, sinun herrasi, on määrännyt mitä nostat',
+    'Älä valita Teron hyvästä tuurista, Maro, sinun herrasi, on määrännyt mitä Tero nostaa',
     'Pelataan peliä sääntöjen mukaan, mutta annetaan anteeksi lapsukset',
     'Älä huijaa, se on noloa',
     'Älä suutu, se on vain peliä',
