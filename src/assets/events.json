@@ -1,0 +1,167 @@
+[
+  {
+    "title": "Lohjan MagicFest 2020",
+    "participants": "Risto, Tero, Jani, Tuukka, Matti, Arttu, Janne, Mikko",
+    "tournament": {
+      "winner": "Risto",
+      "events": [
+        {
+          "name": "Innistrad Swiss Draft",
+          "scoring": "3 pistettä per voitto",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 9
+            },
+            {
+              "player": "Matti",
+              "score": 6
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Raaseporin MagicFest 2021",
+    "participants": "Risto, Tero, Jani, Tuukka, Matti, Janne, Mikko",
+    "tournament": {
+      "winner": "Jani",
+      "events": [
+        {
+          "name": "Mystery booster hidden alliances drafti",
+          "scoring": "5 pistettä voittavalle joukkueelle, neutraalin voittaessa 10 pistettä",
+          "results": [
+            {
+              "player": "Tero",
+              "score": 5
+            },
+            {
+              "player": "Jani",
+              "score": 5
+            },
+            {
+              "player": "Mikko",
+              "score": 5
+            }
+          ]
+        },
+        {
+          "name": "Commander Planechase 2hg",
+          "scoring": "Commander Planechase 2hg jossa yksi pelaa yksin. Yksinpelaava aloittaa ja sijoituksista saa pisteitä, voittava tiimi 9, toinen sija 6 ja kolmannelle 3. Yksinpelaavalle automaattisesti tämän lisäksi 2 pistettä.",
+          "results": [
+            {
+              "player": "Mikko",
+              "score": 9
+            },
+            {
+              "player": "Jani",
+              "score": 9
+            },
+            {
+              "player": "Matti",
+              "score": 6
+            },
+            {
+              "player": "Janne",
+              "score": 6
+            },
+            {
+              "player": "Tuukka",
+              "score": 5
+            }
+          ]
+        },
+        {
+          "name": "Innistrad Swiss Draft",
+          "scoring": "3 pistettä per voitto",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 9
+            },
+            {
+              "player": "Jani",
+              "score": 6
+            },
+            {
+              "player": "Tero",
+              "score": 6
+            },
+            {
+              "player": "Tuukka",
+              "score": 6
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Mikko",
+              "score": 3
+            },
+            {
+              "player": "Matti",
+              "score": 3
+            }
+          ]
+        },
+        {
+          "name": "Timespiral remastered hidden alliances drafti",
+          "scoring": "5 pistettä voittavalle joukkueelle, neutraalin voittaessa 10 pistettä",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 5
+            },
+            {
+              "player": "Jani",
+              "score": 5
+            },
+            {
+              "player": "Matti",
+              "score": 5
+            }
+          ]
+        },
+        {
+          "name": "Commander cube hidden alliances drafti",
+          "scoring": "5 pistettä voittavalle joukkueelle, neutraalin voittaessa 10 pistettä",
+          "results": [
+            {
+              "player": "Tero",
+              "score": 5
+            },
+            {
+              "player": "Janne",
+              "score": 5
+            },
+            {
+              "player": "Tuukka",
+              "score": 5
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Kirkkonummen MagicFest 2022",
+    "participants": "Risto, Tero, Jani, Matti, Arttu?, Janne, Mikko, Hannu",
+    "tournament": {
+      "events": [
+        {
+          "name": "Commander Huutokauppa",
+          "scoring": "Huutokaupassa on 9 pakkaa: Kissat, Kamala ja Kodama, Zurgo Smash!, Pussihukat, Flippers, Käpsyvehkeet, Greven!!!, Hui Kauhistus ja Zada. Näistä jokaisesta vuorollaan pelaajat huutavat pakkoja käyttäen lifeä ja aloituskäden korttimäärää. Yksi käsikortti vastaa 10 elämäpistettä huudoissa. Pelaajamäärän mukaan jakaudutaan kahteen tai kolmeen pöytään. Pelaajan lifestä ja aloituskäden korteista vähennetään huudoissa käytetyt resurssit. Hyökkäyssuunta vuorotellen vasen-oikea. Ekan rundin jälkeen voittajat menee samaan pöytään ja häviäjät toisiin pöytiin ja pelataan toinen kierros. Pelaajat ansaitsee 5 pistettä jokaisesta voitosta."
+        },
+        {
+          "name": "Commander Cube draft"
+        },
+        { 
+          "name": "Dominaria United Swiss draft",
+          "scoring": "3 pistettä per voitto"
+        }
+      ]
+    }
+  }
+]
