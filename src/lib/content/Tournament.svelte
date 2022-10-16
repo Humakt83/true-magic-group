@@ -39,16 +39,20 @@ import Results from './Results.svelte';
 
 <style lang="scss" scoped>
   @import '../../vars.scss';
-  .event {
-    max-width: 600px;
-    background-color: $color;
-    padding: 1rem 2rem;
-    color: $background-color;
-    margin-bottom: 1rem;
-    .event_name {
-      font-weight: bolder;
-    }
+  main {
+    margin: 0 auto;
+    .event {
+      max-width: 600px;
+      background-color: $color;
+      padding: 1rem 2rem;
+      color: $background-color;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      .event_name {
+        font-weight: bolder;
+      }
 
-    box-shadow: 2px 3px 2px 3px $highlight-color;
+      box-shadow: 2px 3px 2px 3px $highlight-color;
+    }
   }
 </style>
