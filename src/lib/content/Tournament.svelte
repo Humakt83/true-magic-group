@@ -29,7 +29,7 @@ import Results from './Results.svelte';
   {#each tournament.events as event}
   <div class="event">
     <p class="event_name">{event.name}</p>
-    <p class="event_description">{event.scoring}</p>
+    <p class="event_description">{@html event.scoring}</p>
     {#if event.results}
       <Results results={event.results}></Results>
     {/if}
@@ -39,7 +39,6 @@ import Results from './Results.svelte';
 
 <style lang="scss" scoped>
   @import '../../vars.scss';
-
   .event {
     max-width: 600px;
     background-color: $color;
@@ -49,6 +48,7 @@ import Results from './Results.svelte';
     .event_name {
       font-weight: bolder;
     }
+
     box-shadow: 2px 3px 2px 3px $highlight-color;
   }
 </style>

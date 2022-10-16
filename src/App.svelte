@@ -25,6 +25,19 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: $background-gradient;
   }
+
+  :global {
+    a {
+      text-decoration: none;
+      color: $highlight-color;
+      &:link {
+        color: $highlight-color;
+      }
+      &:visited {
+        color: $background-color;
+      }
+    }
+  }
   
   main {
     text-align: center;
@@ -48,7 +61,6 @@
     width: fit-content;
     border-bottom: 5px solid $highlight-color;
   }
-
   p {
     max-width: 14rem;
     margin: 1rem auto;

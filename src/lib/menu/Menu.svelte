@@ -23,6 +23,9 @@
       margin-right: 1rem;
       font-size: large;
       font-weight: bolder;
+      &:visited {
+        color: $color;
+      }
     }
   }
 </style>
