@@ -1,13 +1,30 @@
 <script>
-  import Results from './Results.svelte';
+import Results from './Results.svelte';
 
   export let tournament;
+
+  const totalResults = (events) => {
+    const results = events.map((event) => event.results)
+      .reduce((b, a) => b.concat(a));
+    return results.reduce((r, result) => {
+        const player = r.find((r) => r.player === result.player);
+        if (player) {
+          player.score += result.score;
+        } else {
+          r.push({...result});
+        }
+        return r;
+      }, [])
+  }
 </script>
 
 <main>
   <h4>Turnaus</h4>
   {#if tournament.winner}
     <p>🏆 Voittaja {tournament.winner} 🏆</p>
+    {#if tournament.events.length > 1}
+      <Results results={totalResults(tournament.events)}></Results>
+    {/if}
   {/if}
   {#each tournament.events as event}
   <div class="event">
