@@ -1,10 +1,16 @@
 <script>
   import Tournament from './Tournament.svelte';
   export let event;
+
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr)
+    return `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
+  }
 </script>
 
 <main>
   <h3>{event.title}</h3>
+  <p>{formatDate(event.when)}</p>
   <p>Osallistujat: {event.participants}</p>
   <Tournament tournament={event.tournament}></Tournament>
 </main>

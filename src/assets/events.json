@@ -2,6 +2,7 @@
   {
     "title": "Lohjan MagicFest 2020",
     "participants": "Risto, Tero, Jani, Tuukka, Matti, Arttu, Janne, Mikko",
+    "when": "08/24/2020",
     "tournament": {
       "winner": "Risto",
       "events": [
@@ -25,6 +26,7 @@
   {
     "title": "Raaseporin MagicFest 2021",
     "participants": "Risto, Tero, Jani, Tuukka, Matti, Janne, Mikko",
+    "when": "09/16/2021",
     "tournament": {
       "winner": "Jani",
       "events": [
@@ -147,6 +149,7 @@
   },
   {
     "title": "Kirkkonummen MagicFest 2022",
+    "when": "10/20/2022",
     "participants": "Risto, Tero, Jani, Matti, Arttu?, Janne, Mikko, Hannu",
     "tournament": {
       "events": [
