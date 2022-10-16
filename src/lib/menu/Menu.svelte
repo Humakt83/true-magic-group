@@ -5,6 +5,7 @@
   <nav>
     <a href="#kaskyt">Käskyt</a>
     <a href="#events">Tapahtumat</a>
+    <a href="#legendat">Legendat</a>
   </nav>
 </main>
 

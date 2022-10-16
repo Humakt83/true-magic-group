@@ -43,7 +43,7 @@
 
     .event_content {
       min-height: 5rem;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
       &--hidden {
         min-height: 0;
         height: 0;

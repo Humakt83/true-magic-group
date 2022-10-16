@@ -2,6 +2,7 @@
   import Menu from './lib/menu/Menu.svelte'
   import Commandments from './lib/content/Commandments.svelte';
   import Events from './lib/content/Events.svelte';
+  import Legends from './lib/content/Legends.svelte';
 </script>
 
 <main>
@@ -14,6 +15,8 @@
   <Commandments></Commandments>
 
   <Events></Events>
+
+  <Legends></Legends>
 
 </main>
 
