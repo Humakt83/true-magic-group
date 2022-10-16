@@ -10,6 +10,8 @@
 
   <h1>TRUE - MAGIC - GROUP</h1>
 
+  <img src="images/main1.jpg" alt="Monta pakkaa" />
+
   <p>Keittiöpöytäpeliä jo vuodesta nakki ja makkara. Commander, Planechase, Cube, Draft, Sealed, 2HG, 3HG, 7 Tornia jne.</p>
 
   <Commandments></Commandments>
@@ -50,8 +52,8 @@
   }
 
   img {
-    height: 16rem;
-    width: 16rem;
+    max-width: 500px;
+    border: 3px solid $highlight-color;
   }
 
   h1 {

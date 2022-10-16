@@ -2,7 +2,10 @@
   import Tournament from './Tournament.svelte';
   export let event;
 
+  const IMAGES_PATH = 'images/';
+
   let expanded = false;
+  let currentImage = 0;
 
   const formatDate = (dateStr) => {
     const date = new Date(dateStr)
@@ -13,6 +16,15 @@
     expanded = !expanded;
   }
 
+  function changeImage(mod) {
+    currentImage += mod;
+    if (currentImage < 0) {
+      currentImage = event.images.length -1;
+    } else if (currentImage >= event.images.length) {
+      currentImage = 0;
+    }
+  }
+
 </script>
 
 <main>
@@ -21,7 +33,12 @@
   <div class="event_content" class:event_content--hidden={!expanded}>
     <p class="event_date">{formatDate(event.when)}</p>
     <p class="event_participants">Osallistujat: {event.participants}</p>
-    <Tournament tournament={event.tournament}></Tournament>
+    {#if event.images}
+      <img on:click={() => changeImage(1)} src={IMAGES_PATH + event.images[currentImage]} alt="A picture from the event" />
+    {/if}
+    {#if event.tournament}
+      <Tournament tournament={event.tournament}></Tournament>
+    {/if}
   </div>
 </main>
 
@@ -49,7 +66,14 @@
         height: 0;
         opacity: 0;
       }
+
+      img {
+        max-width: 600px;
+        cursor: pointer;
+        border: 3px solid $highlight-color;
+      }
     }
+    .event_image_change,
     .event_toggle {
       background: none;
       color: inherit;

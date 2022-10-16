@@ -1,8 +1,27 @@
 [
   {
+    "title": "Varsovan MagicFest 2018",
+    "participants": "Risto, Tero, Jani",
+    "when": "11/24/2018",
+    "images": ["Varsova/1.jpg", "Varsova/2.jpg", "Varsova/3.jpg"]
+  },
+  {
+    "title": "Barcelonan MagicFest 2019",
+    "participants": "Risto, Jani",
+    "when": "07/27/2019",
+    "images": ["Barcelona/1.jpg", "Barcelona/2.jpg", "Barcelona/3.jpg"]
+  },
+  {
+    "title": "Lyonin MagicFest 2019",
+    "participants": "Risto, Tero, Jani",
+    "when": "11/01/2019",
+    "images": ["Lyon/1.jpg", "Lyon/2.jpg", "Lyon/3.jpg"]
+  },
+  {
     "title": "Lohjan MagicFest 2020",
     "participants": "Risto, Tero, Jani, Tuukka, Matti, Arttu, Janne, Mikko",
     "when": "08/24/2020",
+    "images": ["Lohja/1.jpg","Lohja/2.jpg","Lohja/3.jpg"],
     "tournament": {
       "winner": "Risto",
       "events": [
@@ -27,6 +46,7 @@
     "title": "Raaseporin MagicFest 2021",
     "participants": "Risto, Tero, Jani, Tuukka, Matti, Janne, Mikko",
     "when": "09/16/2021",
+    "images": ["Raasepori/1.jpg","Raasepori/2.jpg","Raasepori/3.jpg","Raasepori/4.jpg"],
     "tournament": {
       "winner": "Jani",
       "events": [
