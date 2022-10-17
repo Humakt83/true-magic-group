@@ -64,6 +64,10 @@
     color: $highlight-color;
     text-transform: uppercase;
     font-size: 2.5rem;
+    @media screen and (max-width: 600px) {
+      font-size: 1.3rem;
+    }
+
     font-weight: bold;
     line-height: 1.1;
     margin: 2rem auto;
