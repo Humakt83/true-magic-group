@@ -3,6 +3,7 @@
   import Commandments from './lib/content/Commandments.svelte';
   import Events from './lib/content/Events.svelte';
   import Legends from './lib/content/Legends.svelte';
+  import Members from './lib/content/Members.svelte';
 </script>
 
 <main>
@@ -13,6 +14,8 @@
   <img src="images/main1.jpg" alt="Monta pakkaa" />
 
   <p>Keittiöpöytäpeliä jo vuodesta nakki ja makkara. Commander, Planechase, Cube, Draft, Sealed, 2HG, 3HG, 7 Tornia jne.</p>
+
+  <Members></Members>
 
   <Commandments></Commandments>
 

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Risto",
+    "image": "Risto.jpg",
+    "likes": "Spawneista - lemmikkeinä, ruokana ja ... muuten vaan",
+    "trivia": "Kiljaisi kun avasi Commander Greven il-Vecin Strongholdin boosterista",
+    "skills": "Spawnien Summonointi"
+  },
+  {
+    "name": "Tero",
+    "image": "Tero.jpg",
+    "likes": "Nostella kortteja",
+    "trivia": "Haisee ketsupilta",
+    "skills": "Topdekkaus"
+  },
+  {
+    "name": "Jani",
+    "image": "Jani.jpg",
+    "likes": "Vuohenjuustojäätelöstä",
+    "trivia": "Jäätelöä joka maistuu vuohenjuustolta",
+    "skills": "Vuohenjuustojäätelön syöminen"
+  },
+  {
+    "name": "Janne",
+    "image": "Janne.jpg",
+    "likes": "Maratonpeleistä",
+    "trivia": "Kouvolalainen",
+    "skills": "Taktiset hyökkäykset"
+  },
+  {
+    "name": "Tuukka",
+    "image": "Tuukka.jpg",
+    "likes": "Voittamisesta",
+    "trivia": "Pronssimitalisti",
+    "skills": "Pokerinaama"
+  },
+  {
+    "name": "Matti",
+    "image": "Matti.jpg",
+    "likes": "Cancelista",
+    "trivia": "Kontrollipelaaja",
+    "skills": "Kaikki"
+  },
+  {
+    "name": "Mikko",
+    "image": "Mikko.jpg",
+    "likes": "Wrath of God, Damnation, Judgement, Akroma's Vengeance",
+    "trivia": "Ei pidä hautapakoista",
+    "skills": "Massapoistaja"
+  },
+  {
+    "name": "Arttu",
+    "image": "Arttu.jpg",
+    "likes": "Shufflaamisesta",
+    "trivia": "Aktiivijäsen",
+    "skills": "Täppääminen"
+  }
+]

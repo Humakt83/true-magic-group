@@ -3,6 +3,7 @@
 
 <main>
   <nav>
+    <a href="#members">Jäsenet</a>
     <a href="#kaskyt">Käskyt</a>
     <a href="#events">Tapahtumat</a>
     <a href="#legendat">Legendat</a>
