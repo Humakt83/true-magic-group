@@ -52,7 +52,8 @@
   }
 
   img {
-    max-width: 500px;
+    width: 500px;
+    max-width: 90vw;
     border: 3px solid $highlight-color;
   }
 

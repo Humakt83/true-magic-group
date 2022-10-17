@@ -9,7 +9,7 @@
 
   const formatDate = (dateStr) => {
     const date = new Date(dateStr)
-    return `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
+    return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
   }
 
   function toggleExpand() {
@@ -28,7 +28,7 @@
 </script>
 
 <main>
-  <h3 class="event_title">{event.title}</h3>
+  <h3 class="event_title" on:click={toggleExpand}>{event.title}</h3>
   <button class="event_toggle" on:click={toggleExpand}>{expanded ? '⬆' : '⬇'}</button>
   <div class="event_content" class:event_content--hidden={!expanded}>
     <p class="event_date">{formatDate(event.when)}</p>
@@ -65,10 +65,13 @@
         min-height: 0;
         height: 0;
         opacity: 0;
+        img {
+          display: none;
+        }
       }
 
       img {
-        max-width: 600px;
+        max-width: 70vw;
         cursor: pointer;
         border: 3px solid $highlight-color;
       }
