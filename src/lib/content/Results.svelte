@@ -13,6 +13,9 @@
   <ul type="none">
     {#each sortResultsByScore(results) as result}
       <li>{result.player} {result.score}</li>
+      {#if result.other}
+      <li>- {result.other}</li>
+      {/if}
     {/each}
   </ul>
 </main>

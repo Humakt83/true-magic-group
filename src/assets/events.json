@@ -170,19 +170,95 @@
   {
     "title": "Kirkkonummen MagicFest 2022",
     "when": "10/20/2022",
-    "participants": "Risto, Tero, Jani, Matti, Arttu?, Janne, Mikko, Hannu",
+    "images": ["Kirkkonummi/1.jpg","Kirkkonummi/2.jpeg","Kirkkonummi/3.jpeg","Kirkkonummi/4.jpeg"],
+    "participants": "Risto, Tero, Jani, Matti, Janne, Mikko, Hannu",
     "tournament": {
+      "winner": "Matti",
       "events": [
         {
           "name": "Commander Huutokauppa",
-          "scoring": "Huutokaupassa on 9 pakkaa: <a href=\"https://www.moxfield.com/decks/KdZqWGRrfEKGVx_p09UJ5w\" target=\"blank\">Kisut</a>, <a href=\"https://www.moxfield.com/decks/YxrmA3L-F0KU-ZzM36gHbA\" target=\"blank\">Kamala & Kodama</a>, <a href=\"https://www.moxfield.com/decks/brKNcIvMS0yohRiCjWfWYw\" target=\"blank\">Zurgo Smash!</a>, <a href=\"https://www.moxfield.com/decks/jpPXKJNt40SRvGjOyTFCCQ\" target=\"blank\">Pussihukat</a>, <a href=\"https://www.moxfield.com/decks/0PFZZOpTD0m5-mzlOZWcVw\" target=\"blank\">Flippers</a>, <a href=\"https://www.moxfield.com/decks/JrImuXzJ10SFvDi0BqW-OQ\" target=\"blank\">Käpsyvehkeet</a>, <a href=\"https://www.moxfield.com/decks/SDhnEEk5NkiAk7JSBJIM6A\" target=\"blank\">Greven!!!</a>, <a href=\"https://www.moxfield.com/decks/qPIVHUFjJkGaVzXGt7YsKQ\" target=\"blank\">Hui Kauhistus</a> ja <a href=\"https://www.moxfield.com/decks/ZLL-j-F7A0i8xYgZRa9W7g\" target=\"blank\">Zada</a>. Näistä jokaisesta vuorollaan pelaajat huutavat pakkoja käyttäen lifeä ja aloituskäden korttimäärää. Yksi käsikortti vastaa 10 elämäpistettä huudoissa. Pelaajamäärän mukaan jakaudutaan kahteen tai kolmeen pöytään. Pelaajan lifestä ja aloituskäden korteista vähennetään huudoissa käytetyt resurssit. Hyökkäyssuunta vuorotellen vasen-oikea. Ekan rundin jälkeen voittajat menee samaan pöytään ja häviäjät toisiin pöytiin ja pelataan toinen kierros. Pelaajat ansaitsee 5 pistettä jokaisesta voitosta."
+          "scoring": "Huutokaupassa on 9 pakkaa: <a href=\"https://www.moxfield.com/decks/KdZqWGRrfEKGVx_p09UJ5w\" target=\"blank\">Kisut</a>, <a href=\"https://www.moxfield.com/decks/YxrmA3L-F0KU-ZzM36gHbA\" target=\"blank\">Kamala & Kodama</a>, <a href=\"https://www.moxfield.com/decks/brKNcIvMS0yohRiCjWfWYw\" target=\"blank\">Zurgo Smash!</a>, <a href=\"https://www.moxfield.com/decks/jpPXKJNt40SRvGjOyTFCCQ\" target=\"blank\">Pussihukat</a>, <a href=\"https://www.moxfield.com/decks/0PFZZOpTD0m5-mzlOZWcVw\" target=\"blank\">Flippers</a>, <a href=\"https://www.moxfield.com/decks/JrImuXzJ10SFvDi0BqW-OQ\" target=\"blank\">Käpsyvehkeet</a>, <a href=\"https://www.moxfield.com/decks/SDhnEEk5NkiAk7JSBJIM6A\" target=\"blank\">Greven!!!</a>, <a href=\"https://www.moxfield.com/decks/qPIVHUFjJkGaVzXGt7YsKQ\" target=\"blank\">Hui Kauhistus</a> ja <a href=\"https://www.moxfield.com/decks/ZLL-j-F7A0i8xYgZRa9W7g\" target=\"blank\">Zada</a>. Näistä jokaisesta vuorollaan pelaajat huutavat pakkoja käyttäen lifeä ja aloituskäden korttimäärää. Yksi käsikortti vastaa 10 elämäpistettä huudoissa. Pelaajamäärän mukaan jakaudutaan kahteen tai kolmeen pöytään. Pelaajan lifestä ja aloituskäden korteista vähennetään huudoissa käytetyt resurssit. Hyökkäyssuunta vuorotellen vasen-oikea. Ekan rundin jälkeen voittajat menee samaan pöytään ja häviäjät toisiin pöytiin ja pelataan toinen kierros. Pelaajat ansaitsee 5 pistettä jokaisesta voitosta.",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 10,
+              "other": "Hui Kauhistus, 1 hippo huudettu"
+            },
+            {
+              "player": "Jani",
+              "score": 5,
+              "other": "Zada"
+            },
+            {
+              "player": "Tero",
+              "score": 5,
+              "other": "Kamala & Kodama, 1 hippo ja yksi käsi huudettu"
+            },
+            {
+              "player": "Matti",
+              "score": 0,
+              "other": "Kisut, 8 hippoa huudettu"
+            },
+            {
+              "player": "Janne",
+              "score": 0,
+              "other": "Zurgo Smash!, 3 hippoa ja yksi käsi huudettu"
+            },
+            {
+              "player": "Mikko",
+              "score": 0,
+              "other": "Pussihukat, 6 hippoa huudettu"
+            },
+            {
+              "player": "Hannu",
+              "score": 0,
+              "other": "Flippers"
+            }
+          ]
         },
         {
-          "name": "Commander Cube draft"
+          "name": "Commander Cube draft",
+          "scoring": "Hyökkäyssuunta vuorotellen vasen-oikea. Ekan rundin jälkeen voittajat menee samaan pöytään ja häviäjät toisiin pöytiin ja pelataan toinen kierros. Pelaajat ansaitsee 5 pistettä jokaisesta voitosta.",
+          "results": [
+            {
+              "player": "Matti",
+              "score": 10
+            },
+            {
+              "player": "Mikko",
+              "score": 5
+            },
+            { 
+              "player": "Tero",
+              "score": 5
+            }
+          ]
         },
         { 
           "name": "Dominaria United Swiss draft",
-          "scoring": "3 pistettä per voitto"
+          "scoring": "3 pistettä per voitto",
+          "results": [
+            {
+              "player": "Matti",
+              "score": 9
+            },
+            {
+              "player": "Risto",
+              "score": 6
+            },
+            { 
+              "player": "Janne",
+              "score": 6
+            },
+            { 
+              "player": "Tero",
+              "score": 3
+            },
+            { 
+              "player": "Mikko",
+              "score": 3
+            }
+          ]
         }
       ]
     }
