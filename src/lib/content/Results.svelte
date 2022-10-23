@@ -1,5 +1,6 @@
 <script>
   export let results;
+  export let showNoOther;
 
   const sortResultsByScore = (results) => {
     const copiedResults = [].concat(results);
@@ -13,7 +14,7 @@
   <ul type="none">
     {#each sortResultsByScore(results) as result}
       <li>{result.player} {result.score}</li>
-      {#if result.other}
+      {#if result.other && !showNoOther}
       <li>- {result.other}</li>
       {/if}
     {/each}

@@ -23,7 +23,7 @@ import Results from './Results.svelte';
   {#if tournament.winner}
     <p>🏆 Voittaja {tournament.winner} 🏆</p>
     {#if tournament.events.length > 1}
-      <Results results={totalResults(tournament.events)}></Results>
+      <Results results={totalResults(tournament.events)} showNoOther={true}></Results>
     {/if}
   {/if}
   {#each tournament.events as event}
