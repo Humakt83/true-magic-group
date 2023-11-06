@@ -5,7 +5,8 @@
     'Kauan sitten kannelmäessä pelattiin 2HG:ta planechasella, Risto ja Jani vastaan Mikko ja Tero. Ensimmäinen plane antoi kolme goattia per land droppi ja toinen plane oli käytännössä Goat of Arms, Ristolla ja Janilla oli reippaasti enemmän vuohia ja peli loppui kolmannella rundilla',
     'Jani suuttui Moonmististä ja heitti sen hyllyn taakse, kun hänen alpha hyökkäyksensä epäonnistui',
     'Janne voitti Innistrad limited moninpelin dekkaamalla itsensä kun Laboratory Maniac oli kentällä.',
-    'Pelattiin Commanderia Starissa Praetor pakoilla, Tero pelasi sinisellä Praetorilla jä päätti Mindslaverilla ottaa haltuun Riston vuoron, jota hänen ei olisi tarvinnut tiputtaa voittaakseen ja käytti Necropotencea tiputtaakseen Riston. Tero voitti Starin ilman, että muita pelaajia oli hengissä.'
+    'Pelattiin Commanderia Starissa Praetor pakoilla, Tero pelasi sinisellä Praetorilla jä päätti Mindslaverilla ottaa haltuun Riston vuoron, jota hänen ei olisi tarvinnut tiputtaa voittaakseen ja käytti Necropotencea tiputtaakseen Riston. Tero voitti Starin ilman, että muita pelaajia oli hengissä.',
+    '5 star EDH peli. Hannu oli voittamassa selvästi peliä Meriekellä (molemmilla vastustajilla lifet vähissä) ja estääkseen veljensä voiton täytyi Jannen (10 lifessä) tap outata ja sweepata pöytä puhtaaksi. Teron Kibo oli ollut tähän asti koko pelin ajan toivottomassa asemassa, mutta Jannen siivottua myös omat suojansa pääsi kädestä pelattu Grunn Instill Energyllä varustettuna iskemään Janneen tasaluvun! Pakan pohjalta hiipi spektaakkelia katsomaan myös Simian Grunts!'
   ]
 </script>
 

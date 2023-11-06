@@ -54,5 +54,12 @@
     "likes": "Shufflaamisesta",
     "trivia": "Aktiivijäsen",
     "skills": "Täppääminen"
+  },
+  {
+    "name": "Hannu",
+    "image": "Hannu.jpg",
+    "likes": "Hidden Alliancesista neutraalina",
+    "trivia": "Sanansa mittainen",
+    "skills": "Antipokerinaama"
   }
 ]

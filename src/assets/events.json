@@ -262,5 +262,90 @@
         }
       ]
     }
+  },
+  {
+    "title": "Karjalohjan MagicFest 2023",
+    "when": "10/20/2023",
+    "images": ["Karjalohja/1.jpg","Karjalohja/2.jpg","Karjalohja/3.jpg"],
+    "participants": "Risto, Tero, Jani, Matti, Janne, Hannu",
+    "tournament": {
+      "winner": "Janne",
+      "events": [
+        {
+          "name": "Team Sealed 2HG (Wilds of Eldraine)",
+          "scoring": "6 pistettä voittavan tiimin pelaajille, 3 pistettä toiseksi tulleen tiimin pelaajille.",
+          "results": [
+            {
+              "player": "Janne",
+              "score": 6
+            },
+            {
+              "player": "Tero",
+              "score": 6
+            },
+            {
+              "player": "Risto",
+              "score": 3
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            },
+            {
+              "player": "Jani",
+              "score": 0
+            },
+            {
+              "player": "Matti",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "name": "Cube Draft Swiss",
+          "scoring": "3 pistettä per voitto.",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 9
+            },
+            {
+              "player": "Tero",
+              "score": 6
+            },
+            {
+              "player": "Jani",
+              "score": 3
+            },
+            {
+              "player": "Matti",
+              "score": 3
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            }
+          ]
+        },
+        { 
+          "name": "Commander random-pakoilla",
+          "scoring": "Kaksi podia ja finaali podien voittajien kesken. 3 pistettä per voitto. Jokainen pelaaja laittoi oman pakkansa arvontaan ja nopilla päätettiin mitä pakkaa kukin pelasi.",
+          "results": [
+            {
+              "player": "Janne",
+              "score": 6
+            },
+            {
+              "player": "Jani",
+              "score": 3
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
