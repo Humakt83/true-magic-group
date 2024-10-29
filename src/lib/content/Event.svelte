@@ -72,6 +72,8 @@
 
       img {
         max-width: 70vw;
+        max-width: 800px;
+        max-height: 800px;
         cursor: pointer;
         border: 3px solid $highlight-color;
       }
