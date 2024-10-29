@@ -347,5 +347,134 @@
         }
       ]
     }
+  },
+  {
+    "title": "Sipoon MagicFest 2024",
+    "when": "10/17/2024",
+    "images": ["Sipoo/1.jpg","Sipoo/2.jpg","Sipoo/3.jpg", "Sipoo/4.jpg"],
+    "participants": "Risto, Tero, Jani, Matti, Janne, Hannu, Tuukka",
+    "tournament": {
+      "winner": "Tuukka",
+      "events": [
+        {
+          "name": "Chaos Booster Draft Swiss",
+          "scoring": "3 pistettä voitosta, 1 piste tasapelistä. Kolme kierrosta",
+          "results": [
+            {
+              "player": "Tero",
+              "score": 7
+            },
+            {
+              "player": "Matti",
+              "score": 7
+            },
+            {
+              "player": "Tuukka",
+              "score": 6
+            },
+            {
+              "player": "Risto",
+              "score": 6
+            },
+            {
+              "player": "Jani",
+              "score": 3
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            }
+          ]
+        },
+        {
+          "name": "Commander Cube draft",
+          "scoring": "Kaksi kierrosta 4-3 pelaajaa per pöytä. 4 pistettä per voitto. Kierros 1, pöytä 1: Risto, Jani ja Tuukka. Voittaja Risto. Pöytä 2: Tero, Matti, Janne ja Hannu. Voittaja Hannu. Kierros 2, pöytä 1: Hannu, Risto, Tero ja Matti. Voittaja Matti. Pöytä 2: Jani, Janne ja Tuukka. Voittaja Tuukka.",
+          "results": [
+            {
+              "player": "Risto",
+              "score": 4
+            },
+            {
+              "player": "Hannu",
+              "score": 4
+            },
+            {
+              "player": "Tuukka",
+              "score": 4
+            },
+            {
+              "player": "Matti",
+              "score": 4
+            },
+          ]
+        },
+        { 
+          "name": "Commander random-pakoilla",
+          "scoring": "Yksi kierros, 4 pistettä voitosta. Jokainen pelaaja laittoi oman pakkansa arvontaan ja nopilla päätettiin mitä pakkaa kukin pelasi. Pöytä 1: Hannu, Risto ja Tuukka. Voittaja Tuukka. Pöytä 2: Matti, Tero, Jani ja Janne. Voittaja Matti",
+          "results": [
+            {
+              "player": "Tuukka",
+              "score": 4
+            },
+            {
+              "player": "Matti",
+              "score": 4
+            }
+          ]
+        },
+        { 
+          "name": "Sealed Swiss Eri Seteillä",
+          "scoring": "Jokainen pelaaja valitsee esivalituista seteistä setin mistä tekee sealed pakkansa. Samaa settiä ei saa valita uudelleen. Pelaaja joilla on vähiten pisteitä aloittaa valitsemisen ja pelaaja jolla on eniten pisteitä valitsee vikana. Kolme kierrosta, 3 pistettä per voitto ja 1 piste tasapelistä. Valittavat setit olivat Duskmourn, Bloomburrow, Outlaws of Thunder Junction, Murders at Karlov Manor, The Lost Caverns of Ixalan, Kamigawa Neon Dynasty ja Crimson Vow.",
+          "results": [
+            {
+              "player": "Tero",
+              "score": 9
+            },
+            {
+              "player": "Risto",
+              "score": 6
+            },
+            {
+              "player": "Janne",
+              "score": 6
+            },
+            {
+              "player": "Matti",
+              "score": 6
+            },
+            {
+              "player": "Jani",
+              "score": 3
+            },
+            {
+              "player": "Tuukka",
+              "score": 3
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            }
+          ]
+        },
+        { 
+          "name": "Pack Wars finaali",
+          "scoring": "Koska Matilla ja Tuukalla oli tasapeli, ratkaistiin voittaja pack warsilla käyttäen Duskmournin boostereita.",
+          "results": [
+            {
+              "player": "Tuukka",
+              "score": 1
+            },
+            {
+              "player": "Matti",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
