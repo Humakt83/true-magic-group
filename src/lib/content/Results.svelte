@@ -1,6 +1,6 @@
 <script>
   export let results;
-  export let showNoOther;
+  export let showNoOther = false;
 
   const sortResultsByScore = (results) => {
     const copiedResults = [].concat(results);

@@ -4,24 +4,38 @@
   import Events from './lib/content/Events.svelte';
   import Legends from './lib/content/Legends.svelte';
   import Members from './lib/content/Members.svelte';
+  import Cube from './lib/mtg/Cube.svelte';
+
+  let cubeOpen = false;
+
+  function setCubeOpen(event, open = false) {
+    cubeOpen = open;
+  }
 </script>
 
 <main>
-  <Menu></Menu>
+  <Menu setCubeOpen={setCubeOpen}></Menu>
 
   <h1>TRUE - MAGIC - GROUP</h1>
 
-  <img src="images/main1.jpg" alt="Monta pakkaa" />
+  {#if !cubeOpen}
 
-  <p>Keittiöpöytäpeliä jo vuodesta nakki ja makkara. Commander, Planechase, Cube, Draft, Sealed, 2HG, 3HG, 7 Tornia jne.</p>
+    <img src="images/main1.jpg" alt="Monta pakkaa" />
 
-  <Members></Members>
+    <p>Keittiöpöytäpeliä jo vuodesta nakki ja makkara. Commander, Planechase, Cube, Draft, Sealed, 2HG, 3HG, 7 Tornia jne.</p>
 
-  <Commandments></Commandments>
+    <Members></Members>
 
-  <Events></Events>
+    <Commandments></Commandments>
 
-  <Legends></Legends>
+    <Events></Events>
+
+    <Legends></Legends>
+  {/if}
+
+  {#if cubeOpen}
+    <Cube></Cube>
+  {/if}
 
 </main>
 

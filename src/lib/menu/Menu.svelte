@@ -1,12 +1,14 @@
 <script>
+  export let setCubeOpen;
 </script>
 
 <main>
   <nav>
-    <a href="#members">Jäsenet</a>
-    <a href="#kaskyt">Käskyt</a>
-    <a href="#events">Tapahtumat</a>
-    <a href="#legendat">Legendat</a>
+    <a href="#members" on:click={setCubeOpen}>Jäsenet</a>
+    <a href="#kaskyt" on:click={setCubeOpen}>Käskyt</a>
+    <a href="#events" on:click={setCubeOpen}>Tapahtumat</a>
+    <a href="#legendat" on:click={setCubeOpen}>Legendat</a>
+    <a href="#cube" on:click={(event) => setCubeOpen(event, true)}>Cube</a>
   </nav>
 </main>
 
