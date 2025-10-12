@@ -66,7 +66,7 @@ Deck
 1x Bellowing Tanglewurm (SOM) 111
 1x Belt of Giant Strength (AFC) 38
 1x Bident of Thassa (BLC) 162
-1x Birds of Paradise (BLC) 81
+1x Birds of Paradise (FIC) 483
 1x Blackblade Reforged (BRR) 6
 1x Blade Splicer (BLC) 136
 1x Blade of Selves (TDC) 313
@@ -219,7 +219,6 @@ Deck
 1x Elvish Skysweeper (GN3) 95
 1x Embereth Shieldbreaker (CLB) 792
 1x Embodiment of Agonies (M20) 98
-1x Empowered Autogenerator (EOC) 135
 1x Emry, Lurker of the Loch (EOC) 71
 1x Enclave Cryptologist (ROE) 66
 1x Entrapment Maneuver (PIP) 160
@@ -316,6 +315,7 @@ Deck
 1x Harness by Force (JOU) 100
 1x Harrow (EOC) 98
 1x Harvester of Souls (J25) 453
+1x Haunted Screen (DSK) 250
 1x Haywire Mite (DSC) 247
 1x Head Games (10E) 148
 1x Hedron Archive (FDN) 726
