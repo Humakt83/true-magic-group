@@ -43,10 +43,6 @@
       flex-direction: column;
       justify-items: start;
       margin-bottom: 1rem;
-
-      img {
-        width: 200px;
-      }
     }
   }
 </style>
