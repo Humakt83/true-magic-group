@@ -26,41 +26,52 @@
   {/if}
   <!-- <script src="http://tappedout.net/tappedout.js"></script> -->
   <h3 class="cube_title" id="cube">Commander Cube</h3>
+  <div class="info">
+    <h4>Themes</h4>
+    <p>
+      Dragons <i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-ci-gwub smaller" />
+      Wizards <i class="ms ms-cost ms-u" />  
+      Artifacts: <i class="ms ms-cost ms-c" /><i class="ms ms-cost ms-ci-5" />
+      Elves: <i class="ms ms-cost ms-g" /><i class="ms ms-cost ms-b smaller" /><i class="ms ms-cost ms-u smaller" />
+      Spellslinger: <i class="ms ms-cost ms-u" /><i class="ms ms-cost ms-r" />
+      Equipment: <i class="ms ms-cost ms-w" /><i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-b" />
+    </p>
+  </div>
   <div class="cube_content">
-    <SectionContainer sectionName="White" cards={getCardsByColors(['W'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Blue" cards={getCardsByColors(['U'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Black" cards={getCardsByColors(['B'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Red" cards={getCardsByColors(['R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Green" cards={getCardsByColors(['G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="White" cards={getCardsByColors(['W'])} showCard={showCard} sectionIcon="ms-w"></SectionContainer>
+    <SectionContainer sectionName="Blue" cards={getCardsByColors(['U'])} showCard={showCard} sectionIcon="ms-u"></SectionContainer>
+    <SectionContainer sectionName="Black" cards={getCardsByColors(['B'])} showCard={showCard} sectionIcon="ms-b"></SectionContainer>
+    <SectionContainer sectionName="Red" cards={getCardsByColors(['R'])} showCard={showCard} sectionIcon="ms-r"></SectionContainer>
+    <SectionContainer sectionName="Green" cards={getCardsByColors(['G'])} showCard={showCard} sectionIcon="ms-g"></SectionContainer>
 
-    <SectionContainer sectionName="Azorius" cards={getCardsByColors(['W', 'U'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Dimir" cards={getCardsByColors(['U', 'B'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Rakdos" cards={getCardsByColors(['B', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Gruul" cards={getCardsByColors(['R', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Selesnya" cards={getCardsByColors(['G', 'W'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Azorius" cards={getCardsByColors(['W', 'U'])} showCard={showCard} sectionIcon="ms-guild-azorius"></SectionContainer>
+    <SectionContainer sectionName="Dimir" cards={getCardsByColors(['U', 'B'])} showCard={showCard} sectionIcon="ms-guild-dimir"></SectionContainer>
+    <SectionContainer sectionName="Rakdos" cards={getCardsByColors(['B', 'R'])} showCard={showCard} sectionIcon="ms-guild-rakdos"></SectionContainer>
+    <SectionContainer sectionName="Gruul" cards={getCardsByColors(['R', 'G'])} showCard={showCard} sectionIcon="ms-guild-gruul"></SectionContainer>
+    <SectionContainer sectionName="Selesnya" cards={getCardsByColors(['G', 'W'])} showCard={showCard} sectionIcon="ms-guild-selesnya"></SectionContainer>
 
-    <SectionContainer sectionName="Orzhov" cards={getCardsByColors(['W', 'B'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Boros" cards={getCardsByColors(['W', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Izzet" cards={getCardsByColors(['U', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Simic" cards={getCardsByColors(['U', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Golgari" cards={getCardsByColors(['G', 'B'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Orzhov" cards={getCardsByColors(['W', 'B'])} showCard={showCard} sectionIcon="ms-guild-orzhov"></SectionContainer>
+    <SectionContainer sectionName="Boros" cards={getCardsByColors(['W', 'R'])} showCard={showCard} sectionIcon="ms-guild-boros"></SectionContainer>
+    <SectionContainer sectionName="Izzet" cards={getCardsByColors(['U', 'R'])} showCard={showCard} sectionIcon="ms-guild-izzet"></SectionContainer>
+    <SectionContainer sectionName="Simic" cards={getCardsByColors(['U', 'G'])} showCard={showCard} sectionIcon="ms-guild-simic"></SectionContainer>
+    <SectionContainer sectionName="Golgari" cards={getCardsByColors(['G', 'B'])} showCard={showCard} sectionIcon="ms-guild-golgari"></SectionContainer>
 
-    <SectionContainer sectionName="Bant" cards={getCardsByColors(['W', 'U', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Esper" cards={getCardsByColors(['W', 'U', 'B'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Grixis" cards={getCardsByColors(['U', 'B', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Jund" cards={getCardsByColors(['B', 'R', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Naya" cards={getCardsByColors(['G', 'W', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Bant" cards={getCardsByColors(['W', 'U', 'G'])} showCard={showCard} sectionIcon="ms-watermark-brokers"></SectionContainer>
+    <SectionContainer sectionName="Esper" cards={getCardsByColors(['W', 'U', 'B'])} showCard={showCard} sectionIcon="ms-watermark-obscura"></SectionContainer>
+    <SectionContainer sectionName="Grixis" cards={getCardsByColors(['U', 'B', 'R'])} showCard={showCard} sectionIcon="ms-watermark-maestros"></SectionContainer>
+    <SectionContainer sectionName="Jund" cards={getCardsByColors(['B', 'R', 'G'])} showCard={showCard} sectionIcon="ms-watermark-riveteers"></SectionContainer>
+    <SectionContainer sectionName="Naya" cards={getCardsByColors(['G', 'W', 'R'])} showCard={showCard} sectionIcon="ms-watermark-cabaretti"></SectionContainer>
 
-    <SectionContainer sectionName="Abzan" cards={getCardsByColors(['W', 'B', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Jeskai" cards={getCardsByColors(['W', 'U', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Mardu" cards={getCardsByColors(['W', 'B', 'R'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Sultai" cards={getCardsByColors(['B', 'U', 'G'])} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Temur" cards={getCardsByColors(['G', 'U', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Abzan" cards={getCardsByColors(['W', 'B', 'G'])} showCard={showCard} sectionIcon="ms-clan-abzan"></SectionContainer>
+    <SectionContainer sectionName="Jeskai" cards={getCardsByColors(['W', 'U', 'R'])} showCard={showCard} sectionIcon="ms-clan-jeskai"></SectionContainer>
+    <SectionContainer sectionName="Mardu" cards={getCardsByColors(['W', 'B', 'R'])} showCard={showCard} sectionIcon="ms-clan-mardu"></SectionContainer>
+    <SectionContainer sectionName="Sultai" cards={getCardsByColors(['B', 'U', 'G'])} showCard={showCard} sectionIcon="ms-clan-sultai"></SectionContainer>
+    <SectionContainer sectionName="Temur" cards={getCardsByColors(['G', 'U', 'R'])} showCard={showCard} sectionIcon="ms-clan-temur"></SectionContainer>
 
-    <SectionContainer sectionName="Colorless" cards={colorless} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Lands" cards={lands} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="More than Three Colors" cards={moreThan3} showCard={showCard}></SectionContainer>
-    <SectionContainer sectionName="Conspiracy" cards={conspiracies} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Colorless" cards={colorless} showCard={showCard} sectionIcon="ms-c"></SectionContainer>
+    <SectionContainer sectionName="Lands" cards={lands} showCard={showCard} sectionIcon="ms-land"></SectionContainer>
+    <SectionContainer sectionName="More than Three Colors" cards={moreThan3} showCard={showCard} sectionIcon="ms-watermark-colorpie"></SectionContainer>
+    <SectionContainer sectionName="Conspiracy" cards={conspiracies} showCard={showCard} sectionIcon="ms-watermark-conspiracy"></SectionContainer>
     <!-- <div class="deck-list" data-stub="30-09-25-commander-cube">&nbsp;</div> -->
   </div>
 </main>
@@ -83,6 +94,28 @@
     
     h3 {
       font-size: larger;
+    }
+
+    .info {
+      position: relative;
+      background-color: $color;
+      color: $background-color;
+      margin: 0 auto 1rem;
+      padding: 0.5rem 2rem;
+      border: $content-border;
+      text-align: center;
+      width: 80%;
+      h4 {
+        margin-bottom: 0;
+      }
+      i {
+        font-size: small;
+        margin-right: 2px;
+        &.smaller {
+          font-size: x-small;
+          margin-right: 1px;
+        }   
+      }
     }
 
     .cube_content {

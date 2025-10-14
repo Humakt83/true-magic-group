@@ -1,6 +1,7 @@
 <script>
   import Section from './Section.svelte';
   export let sectionName = "";
+  export let sectionIcon = "";
   export let cards = [];
   export let showCard = (card) => null;
 
@@ -22,7 +23,7 @@
 </script>
 
 <main>
-  <h4 class="section_title">{sectionName} {cards.length}</h4>
+  <h4 class="section_title"><i class={'ms ms-3x ' + sectionIcon }/>{sectionName} {cards.length}</h4>
   <Section cards={legends} name="Legendary Creature" showCard={showCard}></Section>
   <Section cards={creatures} name="Creature" showCard={showCard}></Section>
   <Section cards={enchantments} name="Enchantment" showCard={showCard}></Section>
@@ -46,5 +47,10 @@
     border: $content-border;
     text-align: left;
     width: 80%;
+
+    i {
+      margin-right: 0.5rem;
+      vertical-align: baseline;
+    }
   }
 </style>
