@@ -1,6 +1,7 @@
 <script>
   import cube from '../../assets/cube.json';
   import SectionContainer from './SectionContainer.svelte';
+  import Info from './Info.svelte';
 
   let cardToShow = null;
 
@@ -18,6 +19,18 @@
     cardToShow = card;
   }
 
+  let cardsInBooster = [];
+
+  function sampleBooster() {
+    cardsInBooster = [];
+    while (cardsInBooster.length < 20) {
+      const card = cube[Math.floor(Math.random() * cube.length)];
+      if (!cardsInBooster.map(c => c.name).includes(card.name)) {
+        cardsInBooster.push(card);
+      }
+    }
+  }
+
 </script>
 
 <main>
@@ -26,17 +39,7 @@
   {/if}
   <!-- <script src="http://tappedout.net/tappedout.js"></script> -->
   <h3 class="cube_title" id="cube">Commander Cube</h3>
-  <div class="info">
-    <h4>Themes</h4>
-    <p>
-      Dragons <i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-ci-gwub smaller" />
-      Wizards <i class="ms ms-cost ms-u" />  
-      Artifacts: <i class="ms ms-cost ms-c" /><i class="ms ms-cost ms-ci-5" />
-      Elves: <i class="ms ms-cost ms-g" /><i class="ms ms-cost ms-b smaller" /><i class="ms ms-cost ms-u smaller" />
-      Spellslinger: <i class="ms ms-cost ms-u" /><i class="ms ms-cost ms-r" />
-      Equipment: <i class="ms ms-cost ms-w" /><i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-b" />
-    </p>
-  </div>
+  <Info cards={cube} />
   <div class="cube_content">
     <SectionContainer sectionName="White" cards={getCardsByColors(['W'])} showCard={showCard} sectionIcon="ms-w"></SectionContainer>
     <SectionContainer sectionName="Blue" cards={getCardsByColors(['U'])} showCard={showCard} sectionIcon="ms-u"></SectionContainer>
@@ -94,6 +97,17 @@
     
     h3 {
       font-size: larger;
+    }
+
+    .booster-cards {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+      flex-direction: row;
+      column-gap: 0.5rem;
+      place-items: stretch;
     }
 
     .info {
