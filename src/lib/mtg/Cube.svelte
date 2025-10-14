@@ -74,6 +74,10 @@
     background-color: $background-color;
     margin: 0 auto;
     padding: 0.5rem 2rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 0.5rem;
+    }
     border: $content-border;
     margin-bottom: 2rem;
     
@@ -85,6 +89,9 @@
       position: relative;
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
+      @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
       column-gap: 0.5rem;
       row-gap: 0.5rem;
       justify-content: stretch;
@@ -95,6 +102,9 @@
       top: 1rem;
       width: 300px;
       z-index: 200;
+      @media screen and (max-width: 600px) {
+        right: 1rem;
+      }
     }
   }
 </style>
