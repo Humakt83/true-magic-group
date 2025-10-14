@@ -1,6 +1,6 @@
 <script>
   import cube from '../../assets/cube.json';
-  import ColorSection from './ColorSection.svelte';
+  import SectionContainer from './SectionContainer.svelte';
 
   let cardToShow = null;
 
@@ -21,46 +21,46 @@
 </script>
 
 <main>
+  {#if cardToShow}
+    <img class="card_image" src={cardToShow.imageUrl} alt={cardToShow.name} />
+  {/if}
   <!-- <script src="http://tappedout.net/tappedout.js"></script> -->
   <h3 class="cube_title" id="cube">Commander Cube</h3>
-  {#if cardToShow}
-  <img class="card_image" src={cardToShow.imageUrl} alt={cardToShow.name} />
-  {/if}
   <div class="cube_content">
-    <ColorSection sectionName="White" cards={getCardsByColors(['W'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Blue" cards={getCardsByColors(['U'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Black" cards={getCardsByColors(['B'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Red" cards={getCardsByColors(['R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Green" cards={getCardsByColors(['G'])} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="White" cards={getCardsByColors(['W'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Blue" cards={getCardsByColors(['U'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Black" cards={getCardsByColors(['B'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Red" cards={getCardsByColors(['R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Green" cards={getCardsByColors(['G'])} showCard={showCard}></SectionContainer>
 
-    <ColorSection sectionName="Azorius" cards={getCardsByColors(['W', 'U'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Dimir" cards={getCardsByColors(['U', 'B'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Rakdos" cards={getCardsByColors(['B', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Gruul" cards={getCardsByColors(['R', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Selesnya" cards={getCardsByColors(['G', 'W'])} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="Azorius" cards={getCardsByColors(['W', 'U'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Dimir" cards={getCardsByColors(['U', 'B'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Rakdos" cards={getCardsByColors(['B', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Gruul" cards={getCardsByColors(['R', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Selesnya" cards={getCardsByColors(['G', 'W'])} showCard={showCard}></SectionContainer>
 
-    <ColorSection sectionName="Orzhov" cards={getCardsByColors(['W', 'B'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Boros" cards={getCardsByColors(['W', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Izzet" cards={getCardsByColors(['U', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Simic" cards={getCardsByColors(['U', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Golgari" cards={getCardsByColors(['G', 'B'])} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="Orzhov" cards={getCardsByColors(['W', 'B'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Boros" cards={getCardsByColors(['W', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Izzet" cards={getCardsByColors(['U', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Simic" cards={getCardsByColors(['U', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Golgari" cards={getCardsByColors(['G', 'B'])} showCard={showCard}></SectionContainer>
 
-    <ColorSection sectionName="Bant" cards={getCardsByColors(['W', 'U', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Esper" cards={getCardsByColors(['W', 'U', 'B'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Grixis" cards={getCardsByColors(['U', 'B', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Jund" cards={getCardsByColors(['B', 'R', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Naya" cards={getCardsByColors(['G', 'W', 'R'])} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="Bant" cards={getCardsByColors(['W', 'U', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Esper" cards={getCardsByColors(['W', 'U', 'B'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Grixis" cards={getCardsByColors(['U', 'B', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Jund" cards={getCardsByColors(['B', 'R', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Naya" cards={getCardsByColors(['G', 'W', 'R'])} showCard={showCard}></SectionContainer>
 
-    <ColorSection sectionName="Abzan" cards={getCardsByColors(['W', 'B', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Jeskai" cards={getCardsByColors(['W', 'U', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Mardu" cards={getCardsByColors(['W', 'B', 'R'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Sultai" cards={getCardsByColors(['B', 'U', 'G'])} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Temur" cards={getCardsByColors(['G', 'U', 'R'])} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="Abzan" cards={getCardsByColors(['W', 'B', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Jeskai" cards={getCardsByColors(['W', 'U', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Mardu" cards={getCardsByColors(['W', 'B', 'R'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Sultai" cards={getCardsByColors(['B', 'U', 'G'])} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Temur" cards={getCardsByColors(['G', 'U', 'R'])} showCard={showCard}></SectionContainer>
 
-    <ColorSection sectionName="Colorless" cards={colorless} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Lands" cards={lands} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="More than Three Colors" cards={moreThan3} showCard={showCard}></ColorSection>
-    <ColorSection sectionName="Conspiracy" cards={conspiracies} showCard={showCard}></ColorSection>
+    <SectionContainer sectionName="Colorless" cards={colorless} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Lands" cards={lands} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="More than Three Colors" cards={moreThan3} showCard={showCard}></SectionContainer>
+    <SectionContainer sectionName="Conspiracy" cards={conspiracies} showCard={showCard}></SectionContainer>
     <!-- <div class="deck-list" data-stub="30-09-25-commander-cube">&nbsp;</div> -->
   </div>
 </main>
@@ -82,6 +82,7 @@
     }
 
     .cube_content {
+      position: relative;
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       column-gap: 0.5rem;
@@ -90,7 +91,7 @@
     }
 
     .card_image {
-      position: sticky;
+      position: fixed;
       top: 1rem;
       width: 300px;
       z-index: 200;
