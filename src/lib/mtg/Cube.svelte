@@ -99,39 +99,6 @@
       font-size: larger;
     }
 
-    .booster-cards {
-      display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
-      @media screen and (max-width: 600px) {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-      }
-      flex-direction: row;
-      column-gap: 0.5rem;
-      place-items: stretch;
-    }
-
-    .info {
-      position: relative;
-      background-color: $color;
-      color: $background-color;
-      margin: 0 auto 1rem;
-      padding: 0.5rem 2rem;
-      border: $content-border;
-      text-align: center;
-      width: 80%;
-      h4 {
-        margin-bottom: 0;
-      }
-      i {
-        font-size: small;
-        margin-right: 2px;
-        &.smaller {
-          font-size: x-small;
-          margin-right: 1px;
-        }   
-      }
-    }
-
     .cube_content {
       position: relative;
       display: grid;
