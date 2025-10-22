@@ -33,7 +33,8 @@
     .members {
       display: grid;
       grid-template-columns: 50% 50%;
-      row-gap: 0.2rem;
+      row-gap: 0.5rem;
+      column-gap: 0.5rem;
 
       @media screen and (max-width: 600px) {
         grid-template-columns: 100%;
@@ -42,7 +43,8 @@
       .member {
         display: grid;
         grid-template-columns: 40% 60%;
-        justify-items: start;
+        justify-items: stretch;
+        align-items: stretch;
         @media screen and (max-width: 400px) {
           grid-template-columns: 100%;
         }
@@ -50,11 +52,15 @@
         img {
           max-width: 160px;
           border-radius: 15px;
+          border-right: 7px solid $paragraph-bg-color;
         }
 
         .member_description {
           font-size: smaller;
           text-align: left;
+          background-color: $paragraph-bg-color;
+          padding: 0.5rem 1rem;
+          border-radius: 0 7px 7px 0;
         }
       }
     }

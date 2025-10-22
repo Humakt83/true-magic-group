@@ -25,10 +25,14 @@
   @import '../../vars.scss';
 
   main {
-    background-color: $background-color;
+    background-color: $paragraph-bg-color;
     width: fit-content;
     margin: 0 auto;
     padding: 0.5rem 2rem;
     border: $content-border;
+    li {
+      text-align: left;
+      line-height: 1.5rem;
+    }
   }
 </style>

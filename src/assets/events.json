@@ -424,7 +424,7 @@
         },
         { 
           "name": "Sealed Swiss Eri Seteillä",
-          "scoring": "Jokainen pelaaja valitsee esivalituista seteistä setin mistä tekee sealed pakkansa. Samaa settiä ei saa valita uudelleen. Pelaaja joilla on vähiten pisteitä aloittaa valitsemisen ja pelaaja jolla on eniten pisteitä valitsee vikana. Kolme kierrosta, 3 pistettä per voitto ja 1 piste tasapelistä. Valittavat setit olivat Duskmourn, Bloomburrow, Outlaws of Thunder Junction, Murders at Karlov Manor, The Lost Caverns of Ixalan, Kamigawa Neon Dynasty ja Crimson Vow.",
+          "scoring": "Jokainen pelaaja valitsee esivalituista seteistä setin mistä tekee sealed pakkansa. Samaa settiä ei saa valita uudelleen. Pelaaja joilla on vähiten pisteitä aloittaa valitsemisen ja pelaaja jolla on eniten pisteitä valitsee vikana. Kolme kierrosta, 3 pistettä per voitto ja 1 piste tasapelistä.<br /><br /> Valittavat setit olivat Duskmourn (Janne), Bloomburrow (Jani), Outlaws of Thunder Junction (Tero), Murders at Karlov Manor (Risto), The Lost Caverns of Ixalan (Hannu), Kamigawa Neon Dynasty (Matti) ja Crimson Vow (Tuukka).",
           "results": [
             {
               "player": "Tero",
@@ -466,6 +466,192 @@
             },
             {
               "player": "Matti",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+    {
+    "title": "Helsingin MagicFest 2025",
+    "when": "10/16/2025",
+    "images": ["Helsinki/1.jpg","Helsinki/2.jpg","Helsinki/3.jpg", "Helsinki/4.jpg", "Helsinki/5.jpg"],
+    "participants": "Risto, Tero, Jani, Janne, Hannu, Tuukka",
+    "tournament": {
+      "winner": "Tero",
+      "events": [
+        {
+          "name": "Commander Cube draft",
+          "scoring": "Kaksi kierrosta 3 pelaajaa per pöytä. 4 pistettä per voitto. <br /><br />Kierros 1, pöytä 1: Risto, Jani ja Tero. Voittaja Tero. <br />Pöytä 2: Tuukka, Janne ja Hannu. Voittaja Hannu. <br /><br />Kierros 2, pöytä 1: Hannu, Jani ja Tero. Voittaja Tero. <br />Pöytä 2: Risto, Janne ja Tuukka. Voittaja Janne.",
+          "results": [
+            {
+              "player": "Janne",
+              "score": 4
+            },
+            {
+              "player": "Hannu",
+              "score": 4
+            },
+            {
+              "player": "Tero",
+              "score": 8
+            }
+          ]
+        },
+        {
+          "name": "Mystery Booster 2 Draft Swiss",
+          "scoring": "3 pistettä voitosta, 1 piste tasapelistä. Kolme kierrosta",
+          "results": [
+            {
+              "player": "Tero",
+              "score": 9
+            },
+            {
+              "player": "Tuukka",
+              "score": 6
+            },
+            {
+              "player": "Risto",
+              "score": 6
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Jani",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "name": "Pauper Swiss",
+          "scoring": "3 pistettä voitosta, 1 piste tasapelistä. Kolme kierrosta. Pakat arvottiin pelaajille: Risto (Boros Synthesizer), Jani (Elves), Tero (Kiln Burn), Hannu (UBR Affinity), Janne (Blue Terror) ja Tuukka (RG Beats).",
+          "matchups": [{
+            "deck1": "Boros Synthesizer",
+            "deck2": "Kiln Burn",
+            "results": "2-1"
+          },
+          {
+            "deck1": "Boros Synthesizer",
+            "deck2": "UBR Affinity",
+            "results": "2-1"
+          },
+          {
+            "deck1": "Boros Synthesizer",
+            "deck2": "Elves",
+            "results": "2-0"
+          },
+          {
+            "deck1": "Elves",
+            "deck2": "Blue Terror",
+            "results": "2-0"
+          },
+          {
+            "deck1": "Elves",
+            "deck2": "RG Beats",
+            "results": "2-0"
+          },
+          {
+            "deck1": "Kiln Burn",
+            "deck2": "UBR Affinity",
+            "results": "2-1"
+          },
+          {
+            "deck1": "Kiln Burn",
+            "deck2": "Blue Terror",
+            "results": "2-0"
+          },
+          {
+            "deck1": "RG Beats",
+            "deck2": "UBR Affinity",
+            "results": "0-2"
+          },
+          {
+            "deck1": "RG Beats",
+            "deck2": "Blue Terror",
+            "results": "1-2"
+          }],
+          "results": [
+            {
+              "player": "Risto",
+              "score": 9
+            },
+            {
+              "player": "Jani",
+              "score": 6
+            },
+            {
+              "player": "Tero",
+              "score": 6
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Tuukka",
+              "score": 0
+            }
+          ]
+        },
+        { 
+          "name": "Commander random-pakoilla",
+          "scoring": "Kaksi kierrosta, 4 pistettä voitosta. Molemmimma kierroksilla jokainen pelaaja laittoi oman pakkansa arvontaan ja nopilla päätettiin mitä pakkaa kukin pelasi.<br /><br />Kierros 1, pöytä 1: Janne (Shriek, Treblemaker), Risto (Gisa the Ghoulcaller) ja Tuukka (Ruric Thar, The Unbowed). Voittaja Tuukka. <br />Pöytä 2: Tero (Gwen Stacy), Jani (Jaheira, Friend of the Forest) ja Hannu (Norin the Wary). Voittaja Hannu. <br /><br />Kierros 2, pöytä 1: Risto (Sonic the Hedgehog), Tuukka (Aryel, Knight of Windgrace), Hannu (Halar the Firefletcher). Voittaja Risto.<br />Pöytä 2: Tero (Satoru Umezawa), Jani (Jolrael, Mwonvuli Recluse), Janne (Gahiji, Honored One). Voittaja Janne.",
+          "results": [
+            {
+              "player": "Tuukka",
+              "score": 4
+            },
+            {
+              "player": "Janne",
+              "score": 4
+            },
+            {
+              "player": "Hannu",
+              "score": 4
+            },
+            {
+              "player": "Risto",
+              "score": 4
+            }
+          ]
+        },
+        { 
+          "name": "Sealed Swiss Eri Seteillä",
+          "scoring": "Jokainen pelaaja valitsee esivalituista seteistä setin mistä tekee sealed pakkansa. Samaa settiä ei saa valita uudelleen. Pelaaja joilla on vähiten pisteitä aloittaa valitsemisen ja pelaaja jolla on eniten pisteitä valitsee vikana. Kolme kierrosta, 3 pistettä per voitto ja 1 piste tasapelistä. <br /><br />Valitut setit olivat Duskmourn (Jani), All Will Be One (Tuukka), Edge of Eternities (Hannu), Kamigawa Neon Dynasty (Janne), Tarkir: Dragonstorm (Risto) ja The Lost Caverns of Ixalan (Tero).",
+          "results": [
+            {
+              "player": "Tuukka",
+              "score": 9
+            },
+            {
+              "player": "Risto",
+              "score": 6
+            },
+            {
+              "player": "Tero",
+              "score": 6
+            },
+            {
+              "player": "Hannu",
+              "score": 3
+            },
+            {
+              "player": "Janne",
+              "score": 3
+            },
+            {
+              "player": "Jani",
               "score": 0
             }
           ]
