@@ -9,10 +9,6 @@
         <h1>TRUE - MAGIC - GROUP</h1>
         <slot />
     </main>
-
-    <footer>
-		<a href="https://ukkosnetti.fi">Ukkosnetti</a>
-	</footer>
 </div>
 
 <style lang="scss">
