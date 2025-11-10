@@ -1,6 +1,13 @@
 <script>
-  import members from '../../assets/members.json';
-  const IMAGES_PATH = 'images/Members/';
+  import members from '$lib/resources/members.json';
+  const images = import.meta.glob(
+    '$lib/images/Members/*.jpg',
+    { eager: true, import: 'default' },
+  );
+
+  function findMatchingImage(imageName) {
+    return images[Object.keys(images).find(i => i.includes(imageName))];
+  }
 </script>
 
 <main>
@@ -8,7 +15,7 @@
   <div class="members">
     {#each members as member}
     <div class="member">
-      <img src={IMAGES_PATH + member.image} alt={member.name}/>
+      <img src={findMatchingImage(member.image)} alt={member.name}/>
       <ul type="none" class="member_description">
         <li><strong>Tykkää</strong>: {member.likes}</li>
         <li><strong>Trivia</strong>: {member.trivia}</li>
@@ -20,7 +27,7 @@
 </main>
 
 <style lang="scss" scoped>
-  @import '../../vars.scss';
+  @import '../vars.scss';
 
   main {
     background-color: $background-color;

@@ -1,6 +1,6 @@
 <script>
-  import cube from '../../assets/cube.json';
-  import SectionContainer from './SectionContainer.svelte';
+  import cube from '$lib/resources/cube.json';
+  import SectionContainer from '$lib/cube/SectionContainer.svelte';
   import Info from './Info.svelte';
 
   let cardToShow = null;
@@ -17,18 +17,6 @@
 
   function showCard(card) {
     cardToShow = card;
-  }
-
-  let cardsInBooster = [];
-
-  function sampleBooster() {
-    cardsInBooster = [];
-    while (cardsInBooster.length < 20) {
-      const card = cube[Math.floor(Math.random() * cube.length)];
-      if (!cardsInBooster.map(c => c.name).includes(card.name)) {
-        cardsInBooster.push(card);
-      }
-    }
   }
 
 </script>

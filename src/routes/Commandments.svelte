@@ -22,7 +22,7 @@
 </main>
 
 <style lang="scss" scoped>
-  @import '../../vars.scss';
+  @import '../vars.scss';
 
   main {
     background-color: $paragraph-bg-color;

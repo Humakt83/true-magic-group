@@ -20,12 +20,12 @@
 </main>
 
 <style lang="scss" scoped>
-  @import '../../vars.scss';
+  @import '../vars.scss';
 
   main {
     background-color: $background-color;
     width: fit-content;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 0.5rem 2rem;
     border: $content-border;
     max-width: 800px;

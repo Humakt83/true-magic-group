@@ -1,19 +1,17 @@
 <script>
-  export let setCubeOpen;
+  import { base } from '$app/paths';
 </script>
 
 <main>
   <nav>
-    <a href="#members" on:click={setCubeOpen}>Jäsenet</a>
-    <a href="#kaskyt" on:click={setCubeOpen}>Käskyt</a>
-    <a href="#events" on:click={setCubeOpen}>Tapahtumat</a>
-    <a href="#legendat" on:click={setCubeOpen}>Legendat</a>
-    <a href="#cube" on:click={(event) => setCubeOpen(event, true)}>Cube</a>
+    <a href="{base}">Etusivu</a>
+    <a href="{base}/events">Tapahtumat</a>
+    <a href="{base}/cube">Commander Cube</a>
   </nav>
 </main>
 
 <style lang="scss">
-  @import './../../vars.scss';
+  @import '../vars.scss';
 
   nav {
     text-align: center;
@@ -24,6 +22,13 @@
     padding: 1rem 2rem;
 
     a { 
+      text-decoration: none;
+      &:link {
+        color: $highlight-color;
+      }
+      &:visited {
+        color: $background-color;
+      }
       margin-right: 1rem;
       font-size: large;
       @media screen and (max-width: 600px) {

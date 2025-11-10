@@ -1,7 +1,7 @@
 <script>
 
 import Event from './Event.svelte';
-import events from '../../assets/events.json';
+import events from '$lib/resources/events.json';
 
 events.sort((first, second) => {
   return new Date(second.when).getTime() - new Date(first.when).getTime();

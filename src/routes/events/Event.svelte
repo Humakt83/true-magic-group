@@ -2,7 +2,14 @@
   import Tournament from './Tournament.svelte';
   export let event;
 
-  const IMAGES_PATH = 'images/';
+  const images = import.meta.glob(
+    '$lib/images/**/*.jpg',
+    { eager: true, import: 'default' },
+  );
+
+  function findMatchingImage(imageName) {
+    return images[Object.keys(images).find(i => i.includes(imageName))];
+  }
 
   let expanded = false;
   let currentImage = 0;
@@ -34,7 +41,7 @@
     <p class="event_date">{formatDate(event.when)}</p>
     <p class="event_participants">Osallistujat: {event.participants}</p>
     {#if event.images}
-      <img on:click={() => changeImage(1)} src={IMAGES_PATH + event.images[currentImage]} alt="A picture from the event" />
+      <img on:click={() => changeImage(1)} src={findMatchingImage(event.images[currentImage])} alt="A picture from the event" />
     {/if}
     {#if event.tournament}
       <Tournament tournament={event.tournament}></Tournament>
