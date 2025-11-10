@@ -7,6 +7,7 @@
     <a href="{base}">Etusivu</a>
     <a href="{base}/events">Tapahtumat</a>
     <a href="{base}/cube">Commander Cube</a>
+    <a href="{base}/tornit">7 Towers Cube</a>
   </nav>
 </main>
 
@@ -23,12 +24,6 @@
 
     a { 
       text-decoration: none;
-      &:link {
-        color: $highlight-color;
-      }
-      &:visited {
-        color: $background-color;
-      }
       margin-right: 1rem;
       font-size: large;
       @media screen and (max-width: 600px) {
@@ -39,6 +34,10 @@
       font-weight: bolder;
       &:visited {
         color: $color;
+      }
+      &:hover,
+      &:link {
+        color: $highlight-color;
       }
     }
   }

@@ -1,5 +1,5 @@
 <script>
-  import Section from './Section.svelte';
+  import Section from '../../lib/cube/Section.svelte';
   export let sectionName = "";
   export let sectionIcon = "";
   export let cards = [];
