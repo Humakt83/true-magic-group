@@ -2,7 +2,6 @@
   export let name = "";
   export let cards = [];
   export let showCard = (card) => null;
-
 </script>
 
 <main>

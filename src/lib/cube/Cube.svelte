@@ -58,8 +58,9 @@
     <SectionContainer sectionName="Colorless" cards={colorless} showCard={showCard} sectionIcon="ms-c"></SectionContainer>
     <SectionContainer sectionName="Lands" cards={lands} showCard={showCard} sectionIcon="ms-land"></SectionContainer>
     <SectionContainer sectionName="More than Three Colors" cards={moreThan3} showCard={showCard} sectionIcon="ms-watermark-colorpie"></SectionContainer>
-    <SectionContainer sectionName="Conspiracy" cards={conspiracies} showCard={showCard} sectionIcon="ms-watermark-conspiracy"></SectionContainer>
-    <!-- <div class="deck-list" data-stub="30-09-25-commander-cube">&nbsp;</div> -->
+    {#if conspiracies.length > 0}
+      <SectionContainer sectionName="Conspiracy" cards={conspiracies} showCard={showCard} sectionIcon="ms-watermark-conspiracy"></SectionContainer>
+    {/if}
   </div>
 </main>
 
