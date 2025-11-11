@@ -1,13 +1,14 @@
 <script>
+  import { page } from '$app/stores';
   import { base } from '$app/paths';
 </script>
 
 <main>
   <nav>
-    <a href="{base}">Etusivu</a>
-    <a href="{base}/events">Tapahtumat</a>
-    <a href="{base}/cube">Commander Cube</a>
-    <a href="{base}/tornit">7 Towers Cube</a>
+    <a href="{base}/" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>Etusivu</a>
+    <a href="{base}/events/" aria-current={$page.url.pathname === '/events/' ? 'page' : undefined}>Tapahtumat</a>
+    <a href="{base}/cube/" aria-current={$page.url.pathname === '/cube/' ? 'page' : undefined}>Commander Cube</a>
+    <a href="{base}/tornit/" aria-current={$page.url.pathname === '/tornit/' ? 'page' : undefined}>7 Towers Cube</a>
   </nav>
 </main>
 
