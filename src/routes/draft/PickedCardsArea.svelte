@@ -1,16 +1,39 @@
 <script>
   export let cards = [];
-  export let showCard = (card) => null;
+
+  let cardToShow = null;
+
+  let cardsByCMC = [0, 1, 2, 3, 4, 5, 6, '7+'].map(cmc => {
+    if ('7+' === cmc) {
+      return {cmc, cards: cards.filter(c => c.cmc >= 7 || c.cmc == null || c.cmc == undefined )};
+    } else {
+      return {cmc, cards: cards.filter(c => c.cmc === cmc)};
+    }
+  });
+
+  function showCard(card) {
+    cardToShow = card;
+  }
 </script>
 
 <main>
   {#if cards.length > 0}
-    <div class="section">
-        {#each cards as card}
-            <div on:mouseenter={showCard(card)} on:mouseleave={showCard(null)}>
+    <div class="picked-cards">
+      {#each cardsByCMC as cmcCards}
+        <div>
+          <h5>{cmcCards.cmc}</h5>
+          {#each cmcCards.cards as card}
+          <div on:mouseenter={() => showCard(card)} on:mouseleave={() => showCard(null)}>
             {card.name}
-            </div>
-        {/each}
+          </div>
+          {/each}
+        </div>
+      {/each}
+      <div class="highlighted-card">
+        {#if cardToShow}
+          <img class="card_image" src={cardToShow.imageUrl} alt={cardToShow.name} />
+        {/if}
+      </div>
     </div>
   {/if}
 </main>
@@ -20,16 +43,28 @@
 
   main {
 
+    width: 100%;
+
     h5 {
-        border-bottom: $content-border;
         margin-bottom: 0;
     }
 
-    .section {
-      display: 'flex';
-      flex-direction: column;
-      justify-items: start;
+    .picked-cards {      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: space-between;
       margin-bottom: 1rem;
+
+      .highlighted-card {        
+        width: 160px;
+        height: 220px;
+        .card_image {
+          border: 2px solid $highlight-color;
+          border-radius: 15px;
+          width: 160px;
+        }
+      }
     }
   }
 </style>

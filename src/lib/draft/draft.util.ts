@@ -19,7 +19,6 @@ export class Draft {
   activeBooster = 0;
   boostersInRound: Array<Array<Card>>;
   pickedCards: Array<Card> = [];
-  cardsPicked = 0;
 
   constructor(cards: Array<Card>) {
     let cardsRemaining = [...cards];
@@ -33,7 +32,6 @@ export class Draft {
   }
 
   nextBooster() {
-    this.cardsPicked = 0;    
     if (this.boostersInRound[this.activeBooster].length < 1) {
       if (this.currentRound < 3) {
         this.boostersInRound = this.boosters.slice(this.currentRound * this.players, (this.currentRound + 1) * this.players);
@@ -48,7 +46,8 @@ export class Draft {
         }
         return booster.slice(2);
       })
-      this.activeBooster += this.activeBooster === 7 ? -7 : 1;
+      this.activeBooster = this.activeBooster === 7 ? 0 : this.activeBooster + 1;
+      console.log('active', this.activeBooster);
     }
   }
 
@@ -56,15 +55,12 @@ export class Draft {
     return this.boostersInRound[this.activeBooster];
   }
 
-  pickCard(idx: number) {
-    const card = this.boostersInRound[this.activeBooster].slice(idx, idx + 1)[0];
-    console.log('Picked Card', card);
-    this.pickedCards.push(card);
-    this.boostersInRound[this.activeBooster] = this.boostersInRound[this.activeBooster].filter(c => c.name !== card.name);
-    this.cardsPicked += 1;
-    if (this.cardsPicked > 1) {
-      this.nextBooster();
-    }
+  pickCards(ids: Array<number>) {
+    const cards = ids.map(idx => this.boostersInRound[this.activeBooster].slice(idx, idx + 1)[0]);
+    this.pickedCards.push(...cards);
+    const pickedNames = cards.map(c => c.name);
+    this.boostersInRound[this.activeBooster] = this.boostersInRound[this.activeBooster].filter(c => !pickedNames.includes(c.name));
+    this.nextBooster();
   }
 }
 

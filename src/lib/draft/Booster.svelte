@@ -1,12 +1,21 @@
 <script>
   export let cardsInBooster = [];
-  export let pickCard = (idx) => null;
+  export let selectCard = (idx) => null;
+  export let highLightedCards = [];
 </script>
 
 <main>
   <div class="booster-cards">
   {#each cardsInBooster as card, idx}
-      <img src={card.imageUrl} alt={card.name}/ on:dblclick={() => pickCard(idx)}>
+    <div role="button" tabindex="0"
+        on:keypress={() => selectCard(idx)}
+        on:click={() => selectCard(idx)}
+        title={card.name}>
+      <img 
+        class={highLightedCards.includes(idx) ? 'highlighted' : ''} 
+        src={card.imageUrl} 
+        alt={card.name}  />
+    </div>
   {/each}
   </div>
 </main>
@@ -24,6 +33,19 @@
       flex-direction: row;
       column-gap: 0.5rem;
       place-items: stretch;
-    }
+      div {
+        img {
+          border: 2px solid black;
+          border-radius: 15px;
+          width: 100%;
+          max-height: 100%;
+          &.highlighted,
+          &:hover,
+          &:focus {
+            border: 2px solid $highlight-color;
+          }
+        }
+      }
+    }    
   }
 </style>

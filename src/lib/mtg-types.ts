@@ -7,4 +7,5 @@ export type Card = {
   colors: Array<Colors>;
   types: Array<CardTypes>;
   imageUrl?: string | URL;
+  cmc?: number;
 }

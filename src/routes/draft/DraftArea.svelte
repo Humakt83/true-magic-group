@@ -9,20 +9,35 @@
   let activeBooster = draft.getActiveBooster();
 
   let pickedCards = draft.pickedCards;
+  let selectedCards = [];
 
-  function makePick(idx) {
-    draft.pickCard(idx);
+  function makePick() {
+    draft.pickCards(selectedCards);
     activeBooster = draft.getActiveBooster();
     currentRound = draft.currentRound;
     pickedCards = draft.pickedCards;
+    selectedCards = [];
   }
 
+  function selectCard(idx) {
+    if (selectedCards.includes(idx)) {
+        selectedCards = selectedCards.filter(i => i !== idx);
+    } else {
+        selectedCards.push(idx);
+        if (selectedCards.length > 2) {
+            selectedCards = selectedCards.slice(1);
+        }
+    }
+    //Creating new array so it rerenders
+    selectedCards = [...selectedCards];
+  }
 </script>
 
 <main>
-  <div class="info">
+  <div class="draftarea">
     <h4>Round {currentRound}</h4>
-    <Booster cardsInBooster={activeBooster} pickCard={makePick}/>
+    <button on:click={makePick} disabled={selectedCards.length < 2}>Pick {selectedCards.length} cards</button>
+    <Booster cardsInBooster={activeBooster} selectCard={selectCard} highLightedCards={selectedCards}/>
     {#key pickedCards}
       <PickedCardsArea cards={pickedCards} />
     {/key}
@@ -44,9 +59,12 @@
         &:hover {
             background-color: darken($background-color, 10);
         }
+        &:disabled {
+            background-color: lighten($color: $background-color, $amount: 20);
+        }
     }
 
-    .info {
+    .draftarea {
       position: relative;
       background-color: $color;
       color: $background-color;
@@ -55,6 +73,10 @@
       border: $content-border;
       text-align: center;
       width: 80%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      align-items: center;
       h4 {
         margin-bottom: 0;
       }
