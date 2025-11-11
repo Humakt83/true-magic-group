@@ -1,28 +1,13 @@
 <script>
   import Booster from '$lib/draft/Booster.svelte';
-  import {sampleBooster} from '$lib/draft/draft.util.js';
 
-  export let cards;
-
-  let cardsInBooster = [];
+  export let draft = null;
 
 </script>
 
 <main>
   <div class="info">
-    <h4>Themes</h4>
-    <p>
-      Dragons <i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-ci-gwub smaller" />
-      Wizards <i class="ms ms-cost ms-u" />  
-      Artifacts: <i class="ms ms-cost ms-c" /><i class="ms ms-cost ms-ci-5" />
-      Elves: <i class="ms ms-cost ms-g" /><i class="ms ms-cost ms-b smaller" /><i class="ms ms-cost ms-u smaller" />
-      Spellslinger: <i class="ms ms-cost ms-u" /><i class="ms ms-cost ms-r" />
-      Equipment: <i class="ms ms-cost ms-w" /><i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-b" />
-    </p>
-    <button on:click={() => cardsInBooster = sampleBooster(cards)}>Sample Booster</button>
-    {#if cardsInBooster.length > 0}
-      <Booster cardsInBooster={cardsInBooster}/>
-    {/if}
+    <Booster cardsInBooster={draft.activeBooster}/>
   </div>
 </main>
 

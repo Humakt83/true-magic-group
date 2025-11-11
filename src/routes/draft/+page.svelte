@@ -1,11 +1,17 @@
 <script>
   import commanderCubeList from '$lib/resources/cube.json';
   import towerCubeList from '$lib/resources/7-towers-cube.json';
-  import Booster from '$lib/draft/Booster.svelte';
-  import {sampleBooster} from '$lib/draft/draft.util.js';
+  import { Draft } from '$lib/draft/draft.util.js';
+  import DraftArea from './DraftArea.svelte';
 
   let pickedCube = commanderCubeList;
   let started = false;
+  let draft = null;
+  
+  function start() {
+    started = true;
+    draft = new Draft(pickedCube);
+  }
 
 </script>
 
@@ -16,9 +22,9 @@
     <option on:select={() => pickedCube = commanderCubeList}>Commander Cube</option>
     <option on:select={() => pickedCube = towerCubeList}>7 Towers Cube</option>
   </select>
-  <button on:click={() => started = true}>Start</button>
+  <button on:click={start}>Start</button>
   {#if started}
-    <Booster cardsInBooster={sampleBooster(pickedCube)}/>
+    <DraftArea draft={draft}/>
   {/if}
 </main>
 
