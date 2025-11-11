@@ -9,6 +9,7 @@
     <a href="{base}/events/" aria-current={$page.url.pathname === '/events/' ? 'page' : undefined}>Tapahtumat</a>
     <a href="{base}/cube/" aria-current={$page.url.pathname === '/cube/' ? 'page' : undefined}>Commander Cube</a>
     <a href="{base}/tornit/" aria-current={$page.url.pathname === '/tornit/' ? 'page' : undefined}>7 Towers Cube</a>
+    <a href="{base}/draft/" aria-current={$page.url.pathname === '/draft/' ? 'page' : undefined}>Cube Draft</a>
   </nav>
 </main>
 

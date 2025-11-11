@@ -1,17 +1,10 @@
 <script>
+  import Booster from '$lib/draft/Booster.svelte';
+  import {sampleBooster} from '$lib/draft/draft.util.js';
+
   export let cards;
 
   let cardsInBooster = [];
-
-  function sampleBooster() {
-    cardsInBooster = [];
-    while (cardsInBooster.length < 20) {
-      const card = cards[Math.floor(Math.random() * cards.length)];
-      if (!cardsInBooster.map(c => c.name).includes(card.name)) {
-        cardsInBooster.push(card);
-      }
-    }
-  }
 
 </script>
 
@@ -26,13 +19,9 @@
       Spellslinger: <i class="ms ms-cost ms-u" /><i class="ms ms-cost ms-r" />
       Equipment: <i class="ms ms-cost ms-w" /><i class="ms ms-cost ms-r" /><i class="ms ms-cost ms-b" />
     </p>
-    <button on:click={sampleBooster}>Sample Booster</button>
+    <button on:click={() => cardsInBooster = sampleBooster(cards)}>Sample Booster</button>
     {#if cardsInBooster.length > 0}
-      <div class="booster-cards">
-        {#each cardsInBooster as card}
-          <img src={card.imageUrl} alt={card.name}/>
-        {/each}
-      </div>
+      <Booster cardsInBooster={cardsInBooster}/>
     {/if}
   </div>
 </main>

@@ -1,6 +1,6 @@
 <script>
   export let cube;
-  import SectionContainer from '$lib/cube/SectionContainer.svelte';
+  import SectionContainer from './SectionContainer.svelte';
 
   let cardToShow = null;
 
