@@ -1,11 +1,12 @@
 <script>
   export let cardsInBooster = [];
+  export let pickCard = (idx) => null;
 </script>
 
 <main>
   <div class="booster-cards">
-  {#each cardsInBooster as card}
-      <img src={card.imageUrl} alt={card.name}/>
+  {#each cardsInBooster as card, idx}
+      <img src={card.imageUrl} alt={card.name}/ on:dblclick={() => pickCard(idx)}>
   {/each}
   </div>
 </main>

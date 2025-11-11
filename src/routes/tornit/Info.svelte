@@ -1,6 +1,6 @@
 <script>
   import Booster from "$lib/draft/Booster.svelte";
-  import {sampleBooster} from '$lib/draft/draft.util.js';
+  import {sampleBooster} from '$lib/draft/draft.util.ts';
   export let cards;
 
   let cardsInBooster = [];

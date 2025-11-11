@@ -1,7 +1,7 @@
 <script>
   import commanderCubeList from '$lib/resources/cube.json';
   import towerCubeList from '$lib/resources/7-towers-cube.json';
-  import { Draft } from '$lib/draft/draft.util.js';
+  import { Draft } from '$lib/draft/draft.util.ts';
   import DraftArea from './DraftArea.svelte';
 
   let pickedCube = commanderCubeList;
@@ -18,13 +18,15 @@
 <main>
   <h3 class="cube_title" id="cube">Commander Draft</h3>
   <label for="cube-picker">Pick Cube</label>
-  <select name="cube-picker">
-    <option on:select={() => pickedCube = commanderCubeList}>Commander Cube</option>
-    <option on:select={() => pickedCube = towerCubeList}>7 Towers Cube</option>
+  <select name="cube-picker" bind:value={pickedCube}>
+    <option value={commanderCubeList}>Commander Cube</option>
+    <option value={towerCubeList}>7 Towers Cube</option>
   </select>
-  <button on:click={start}>Start</button>
+  <button on:click={start}>{started ? 'Restart' : 'Start'}</button>
   {#if started}
-    <DraftArea draft={draft}/>
+    {#key draft}
+      <DraftArea draft={draft}/>
+    {/key}
   {/if}
 </main>
 

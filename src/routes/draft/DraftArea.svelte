@@ -1,13 +1,31 @@
 <script>
   import Booster from '$lib/draft/Booster.svelte';
+  import PickedCardsArea from './PickedCardsArea.svelte';
 
-  export let draft = null;
+  export let draft;
+
+  let currentRound = draft.currentRound;
+
+  let activeBooster = draft.getActiveBooster();
+
+  let pickedCards = draft.pickedCards;
+
+  function makePick(idx) {
+    draft.pickCard(idx);
+    activeBooster = draft.getActiveBooster();
+    currentRound = draft.currentRound;
+    pickedCards = draft.pickedCards;
+  }
 
 </script>
 
 <main>
   <div class="info">
-    <Booster cardsInBooster={draft.activeBooster}/>
+    <h4>Round {currentRound}</h4>
+    <Booster cardsInBooster={activeBooster} pickCard={makePick}/>
+    {#key pickedCards}
+      <PickedCardsArea cards={pickedCards} />
+    {/key}
   </div>
 </main>
 
