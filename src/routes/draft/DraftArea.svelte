@@ -35,8 +35,10 @@
 
 <main>
   <div class="draftarea">
-    <h4>Round {currentRound}</h4>
-    <button on:click={makePick} disabled={selectedCards.length < 2}>Pick {selectedCards.length} cards</button>
+    <h3>{currentRound > 3 ? 'Draft Over' : `Round ${currentRound}`}</h3>
+    {#if currentRound < 4}
+      <button on:click={makePick} disabled={selectedCards.length < 2}>Pick {selectedCards.length} cards</button>
+    {/if}
     <Booster cardsInBooster={activeBooster} selectCard={selectCard} highLightedCards={selectedCards}/>
     {#key pickedCards}
       <PickedCardsArea cards={pickedCards} />

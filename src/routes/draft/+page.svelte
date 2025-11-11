@@ -17,12 +17,14 @@
 
 <main>
   <h3 class="cube_title" id="cube">Commander Draft</h3>
-  <label for="cube-picker">Pick Cube</label>
-  <select name="cube-picker" bind:value={pickedCube}>
-    <option value={commanderCubeList}>Commander Cube</option>
-    <option value={towerCubeList}>7 Towers Cube</option>
-  </select>
-  <button on:click={start}>{started ? 'Restart' : 'Start'}</button>
+  <div class="controls">
+    <label for="cube-picker">Pick Cube</label>
+    <select name="cube-picker" bind:value={pickedCube}>
+      <option value={commanderCubeList}>Commander Cube</option>
+      <option value={towerCubeList}>7 Towers Cube</option>
+    </select>
+    <button on:click={start}>{started ? 'Restart' : 'Start'}</button>
+  </div>  
   {#if started}
     {#key draft}
       <DraftArea draft={draft}/>
@@ -50,25 +52,19 @@
       font-size: larger;
     }
 
-    .cube_content {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      @media screen and (max-width: 600px) {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-      }
-      column-gap: 0.5rem;
-      row-gap: 0.5rem;
-      justify-content: stretch;
+    .controls {
+      margin-bottom: 2rem;
     }
 
-    .card_image {
-      position: fixed;
-      top: 1rem;
-      width: 300px;
-      z-index: 200;
-      @media screen and (max-width: 600px) {
-        right: 1rem;
+    button {
+      background-color: $background-color2;
+      color: $background-color;
+      border: $background-color2;
+      padding: 0.5rem 2rem;
+      font-weight: bolder;
+      border-radius: 2px;
+      &:hover {
+        background-color: darken($background-color2, 10);
       }
     }
   }

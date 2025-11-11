@@ -18,7 +18,8 @@
 
 <main>
   {#if cards.length > 0}
-    <div class="picked-cards">
+    <h3>Picked Cards</h3>
+    <div class="picked-cards">      
       {#each cardsByCMC as cmcCards}
         <div>
           <h5>{cmcCards.cmc}</h5>
@@ -56,8 +57,8 @@
       align-content: space-between;
       margin-bottom: 1rem;
 
-      .highlighted-card {        
-        width: 160px;
+      .highlighted-card {
+        min-width: 160px;
         height: 220px;
         .card_image {
           border: 2px solid $highlight-color;
