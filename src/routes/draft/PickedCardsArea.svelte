@@ -66,6 +66,11 @@
           width: 160px;
         }
       }
+
+      @media screen and (max-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
   }
 </style>
