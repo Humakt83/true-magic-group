@@ -54,6 +54,17 @@
 
     .controls {
       margin-bottom: 2rem;
+      select {
+        padding: 5px 3px;
+        color: $background-color;
+        background-color: $color;
+        border: 2px solid $color;
+        &:hover,
+        &:focus,
+        &:active {
+          border: 2px solid $highlight-color;
+        }
+      }
     }
 
     button {
